@@ -1,0 +1,38 @@
+[
+    {
+        "Id":1,
+        "Name": "Sonu Nigam",
+        "City": "Mumbai",
+        "Age": 35,
+        "Profession": "Singer",
+        "Available":"Yes",
+        "imageUrl":"./sample.jpg"
+    },
+    {
+        "Id":2,
+        "Name": "Chris Martin",
+        "City": "New York",
+        "Age": 30,
+        "Profession": "Singer",
+        "Available":"Yes",
+        "imageUrl":"./sample.jpg"
+    },
+    {
+        "Id":3,
+        "Name": "Adele",
+        "City": "London",
+        "Age": 35,
+        "Profession": "Singer",
+        "Available":"Yes",
+        "imageUrl":"./sample.jpg"
+    },
+    {
+        "Id":4,
+        "Name": "Johnny English",
+        "City": "Menchester",
+        "Age": 35,
+        "Profession": "Comedian",
+        "Available":"Yes",
+        "imageUrl":"./sample.jpg"
+    } 
+]
