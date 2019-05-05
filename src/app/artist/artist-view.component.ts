@@ -1,9 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { IArtist } from './artist';
 
 @Component({
-    selector:'app-artist-view',
+    
     templateUrl:'./artist-view.component.html'
 })
 export class ArtistViewComponent{
     pageTitle:string = "Artist View";
+    artist : IArtist;
+
+    constructor(){
+        
+    }
+
+    ngOnInnit(){
+
+    }
 }
