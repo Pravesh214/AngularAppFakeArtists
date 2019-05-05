@@ -1,27 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ArtistListComponent } from './artist/artist-list.component';
-import { ArtistViewComponent } from './artist/artist-view.component';
 import { WelcomeComponent } from './home/welcome.component';
-import { RouterModule } from '@angular/router';
+import { ArtistModule } from './artist/artist.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
-    ArtistListComponent,
-    ArtistViewComponent
+    WelcomeComponent    
   ],
   imports: [
-    BrowserModule,        
-    FormsModule,
-    AppRoutingModule,
-    HttpClientModule,   
+    BrowserModule,
+    HttpClientModule,
+    ArtistModule,    
+    AppRoutingModule,           
   ],
   providers: [],
   bootstrap: [AppComponent]
