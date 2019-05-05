@@ -6,7 +6,7 @@
         "Age": 35,
         "Profession": "Singer",
         "Available":"Yes",
-        "imageUrl":"./sample.jpg"
+        "imageUrl":"api/artists/sample.jpg"
     },
     {
         "Id":2,
@@ -15,7 +15,7 @@
         "Age": 30,
         "Profession": "Singer",
         "Available":"Yes",
-        "imageUrl":"./sample.jpg"
+        "imageUrl":"api/artists/sample.jpg"
     },
     {
         "Id":3,
@@ -24,7 +24,7 @@
         "Age": 35,
         "Profession": "Singer",
         "Available":"Yes",
-        "imageUrl":"./sample.jpg"
+        "imageUrl":"api/artists/sample.jpg"
     },
     {
         "Id":4,
@@ -33,6 +33,6 @@
         "Age": 35,
         "Profession": "Comedian",
         "Available":"Yes",
-        "imageUrl":"./sample.jpg"
+        "imageUrl":"api/artists/sample.jpg"
     } 
 ]
