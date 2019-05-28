@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { ArtistModule } from './artist/artist.module';
 import { AppRoutingModule } from './app-routing.module';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent    
+    WelcomeComponent,
+    UserComponent    
   ],
   imports: [
     BrowserModule,

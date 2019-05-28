@@ -2,12 +2,35 @@
     <div class="card-header">
         {{pageTitle}}
     </div>
-    <div class="card-body">
-        <div class="container-fluid">
-            artist id = {{id}}
+    <div class='card-body'>
+        <div class='row'>
+          <div class='col-md-8'>
+            <div class='row'>
+              <div class='col-md-4'>ID:</div>
+              <div class='col-md-8'>{{artist.Id}}</div>
+            </div>
+            <div class='row'>
+              <div class='col-md-4'>Name:</div>
+              <div class='col-md-8'>{{artist.Name}}</div>
+            </div>
+            <div class='row'>
+              <div class='col-md-4'>Age:</div>
+              <div class='col-md-8'>{{artist.Age}}</div>
+            </div>
+            <div class='row'>
+              <div class='col-md-4'>City:</div>
+              <div class='col-md-8'>{{artist.City}}</div>
+            </div>
+            <div class='row'><hr>                                
+            </div>
+            <div class='row'>
+                <div class='col-md-4'>
+                    <button class="btn btn-outline-secondary" (click)='onBack()' style="widows: 80px;">
+                        <i class="fa fa-chevron-left">Back</i>
+                    </button>
+                </div>                
+            </div>
+          </div>
         </div>
-        <button class="btn btn-outline-secondary" (click)='onBack()' style="widows: 80px;">
-                <i class="fa fa-chevron-left">Back</i>
-        </button>
-    </div>   
+      </div>      
 </div>

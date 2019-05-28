@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { IArtist } from './artist';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { tap, catchError} from 'rxjs/operators'
+import { tap, catchError, map} from 'rxjs/operators'
 
 @Injectable({
     providedIn:'root'
@@ -20,6 +20,12 @@ export class ArtistService{
             catchError(this.hadleError)
         );
     }
+
+    getArtist(id: number): Observable<IArtist | undefined> {
+        return this.getArtists().pipe( 
+          map((artists: IArtist[]) => artists.find(a => a.Id === id))
+        );
+      }
 
     private hadleError(err: HttpErrorResponse){
         let errorMessage = '';
